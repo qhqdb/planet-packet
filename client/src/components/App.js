@@ -6,10 +6,7 @@ function App() {
   const [id, setId] = useState()
 
   return (
-    <>
-      {id}
-      <Login onIdsubmit={setId} />
-    </>
+      id ? : <Dashboard id={id} /> : <Login onIdsubmit={setId} />      
   )
 }
 
